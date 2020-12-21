@@ -1,0 +1,44 @@
+/* IMPORTS AND KEYFRAMES */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+* {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #b2fefa, #0ed2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    border: 10px solid black;
+    padding: 10px;
+    width: 500px;
+    
+    text-align: center;
+    
+    position: relative;
+    left: 30%;
+    margin-top: 9.5rem;
+    
+    font-size: 3rem;
+
+    /* ANIMTION */
+
+    box-shadow: 10px 20px 30px blue;
+
+}
+
+/* INDEX.HTML CLASS STYLING */
+
+.title {
+    text-decoration: underline;
+}
+
+#recordButton, #pauseButton, #stopButton, #submit {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    background-image: linear-gradientto (#2980b9, #6dd5fa, #ffff);
+}

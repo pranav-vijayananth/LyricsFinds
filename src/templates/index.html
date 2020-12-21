@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/pranav/Documents/LyricsFinds/static/style.css">
+    <title>LyricsFind</title>
+  </head>
+  <body>
+      <div class="container">
+        <h1 class="title">LyricFinds</h1>
+        <div id="controls">
+          <button id="recordButton">Record</button>
+          <button id="pauseButton" disabled>Pause</button>
+          <button id="stopButton" disabled>Stop</button>
+        </div>
+        <p><strong>Recordings:</strong></p>
+        <ol id="recordingsList"></ol>
+        <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+
+        <!-- FORM TO SEND WAV FILE TO FLASK APP -->
+        <form action="{{ url_for('main') }}" method="POST" enctype="multipart/form-data">
+          <input name="wav_audio" type="file" accept="audio/*" capture>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+  </body>
+</html>
