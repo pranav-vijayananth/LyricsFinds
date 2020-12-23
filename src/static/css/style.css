@@ -17,6 +17,7 @@ button {
     font-family: 'Basic', sans-serif;
     border: transparent;
     color: white;
+    cursor: pointer;
 }
 
 button:hover {

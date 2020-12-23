@@ -88,8 +88,7 @@ def main():
             album_image = album_image["src"]
 
             #RENDERING BACK TEMPLATES WITH VARIABLE
-
-            return render_template("results.html", song_name=song_name, artist_name=artist_name, album_image=album_image)
+            return render_template("index.html", song_name=song_name, artist_name=artist_name, album_image=album_image)
        
     return render_template('index.html')
 
