@@ -2,15 +2,22 @@ body {
     text-align: center;
     color: white;
     font-family: 'Basic', sans-serif;
-
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 1000% 1000%;
 	animation: gradient 15s ease infinite;
 }
 
-img {
+.recordings:hover {
+    color: black;
+}
+
+.album_image {
     height: 220px;
     width: 220px;
+}
+
+.results:hover {
+    color: black;
 }
 
 .title:hover {
@@ -30,9 +37,19 @@ button:hover {
 
 }
 
+.results-container {
+    border: 8px solid white;
+    padding: 15px;
+    height: auto;
+    width: 20%;
+    position: relative;
+    left: 38%;
+    top: 75px;
+}
+
 .container {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 50px;
     left: 38%;
     border: 8px solid white;
     padding: 20px;

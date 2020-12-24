@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+    <!-- <link rel="stylesheet" href="/Users/pranav/Documents/pranav/LyricsFinds/src/static/css/styling.css"> -->
     <title>LyricsFind</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
           <button id="pauseButton" disabled>Pause</button>
           <button id="stopButton" disabled>Stop</button>
         </div>
-        <p><strong>Recordings:</strong></p>
+        <p class="recordings"><strong>Recordings:</strong></p>
         <ol id="recordingsList"></ol>
         <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
         <script src="{{ url_for('static', filename='/js/Recorder.js') }}"></script>
@@ -27,9 +28,11 @@
         </form>
       </div>
       {% if song_name and artist_name and album_image %}
-        <h2 class="results">{{ song_name }}</h2>
-        <h2 class="results">{{ artist_name }}</h2>
-        <img src="{{ album_image }}">
+        <div class="results-container">
+          <h2 class="results">{{ song_name }}</h2>
+          <h2 class="results">{{ artist_name }}</h2>
+          <img class="album_image" src="{{ album_image }}">
+        <div/>
       {% endif %}
   </body>
 </html>
