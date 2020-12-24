@@ -1,0 +1,9 @@
+beautifulsoup4==4.6.0
+bs4==0.0.1
+Flask==1.1.2
+requests-html==0.10.0
+requests==2.24.0
+Flask-Cors==3.0.9
+Jinja2==2.11.2
+json5==0.9.5
+SpeechRecognition==3.8.1
