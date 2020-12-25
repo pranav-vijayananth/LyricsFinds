@@ -31,12 +31,11 @@ I built the website backend through Flask and Python. To build the recorder exte
 
 ## Installation
 
-1. Install dependencies with the [requirements.txt](requirements.txt)
-2. Fork of clone the github repo to your local computer 
-3. Edit [app.py](src/app.py)
-  1. Change `app.config["AUDIO_UPLOADS"] = "/Users/pranav/Downloads/"` by setting the app.config to your designted path or folder.
-  2. Change `with sr.AudioFile(f"/Users/pranav/Downloads/{wav_audio_name}") as source:` by removing `/Users/pranav/Downloads/` and setting it to the app.config path or folder.
-  3. After these changes you can run the Flask app by going into the src folder and running `python3 app.py`
+Make sure you have the latest version of python installed
+
+1. Fork or clone the github repo to your local computer 
+2. Install dependencies with the [requirements.txt](requirements.txt)
+3. After these changes you can run the Flask app by going into the src folder and running `python3 app.py`
 
 ---
 
