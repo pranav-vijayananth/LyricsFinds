@@ -4,13 +4,13 @@ from bs4 import BeautifulSoup
 from requests_html import HTMLSession
 import requests
 import os
+from os.path import expanduser
 
-
+home = expanduser("~")
+home = f"{home}/Downloads/"
 
 app = Flask(__name__)
-app.config["AUDIO_UPLOADS"] = "/Users/pranav/Downloads/"
-
-#FUNCS
+app.config["AUDIO_UPLOADS"] = home
 
 #LISTS --> STRING
 def ListsintoStrings(l):
@@ -34,7 +34,7 @@ def main():
 
             r = sr.Recognizer()
             
-            with sr.AudioFile(f"/Users/pranav/Downloads/{wav_audio_name}") as source:
+            with sr.AudioFile(f"{home}{wav_audio_name}") as source:
                 audio = r.listen(source)
                 translate_text = r.recognize_google(audio)
 
